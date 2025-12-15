@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+</head>
+<style>
+
+	body{
+	background-color:#D0F4F7;
+	margin:0px;
+	}
+
+	.header{
+	display:flex;
+	background-color:#4FBDBA;
+	padding:60px;
+	margin:0px;
+	text-align:center;
+	}
+	
+	#logopic img{
+	width:100px;
+	height:150px;
+	border-radius:15px;
+	}
+	
+	#logo{
+	padding:30px;
+	margin-left:80px;
+	text-align:left;
+	color:#FFFFFF;
+	font-size:80px;
+	}
+
+	.nav{
+	display:flex;
+	background-color:#FFB347;
+	text-align:center;
+	}
+
+	.nav div{
+	background-color:#FFD580;
+	padding:14px;
+	margin-left:15px;
+	margin-right:15px;
+	font-size:20px;
+	font-family: "Lucida Console";
+	text-align:justified;
+	border-radius:10px;
+	height:20px;
+	}
+
+	#home{
+	margin-left:500px;
+	}
+
+	.nav div a{
+	display:block;
+	text-decoration:none;
+	color:#333333;
+	}
+	
+	.nav div:hover{
+	background-color:#FF8C42;
+	cursor:pointer;
+	color:#FFFFFF;
+	}
+
+	.products{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap:20px;
+	background-color:#A3D2CA;
+	padding:30px;
+	margin-left:250px;
+	}
+
+	.products div{
+	background-color:#FFFFFF;
+	padding:20px;
+	margin:20px;
+	font-size:24px;
+	color:#333333;
+	border-radius:15px;
+	height:270px;
+	box-shadow:0 5px 15px rgba(0,0,0,0.2);
+	text-align:center;
+	}
+	
+	.products div img{
+	width:250px;
+	height:150px;
+	margin-top:40px;
+	margin-bottom:15px;
+	}
+	
+	.products div a{
+	display:block;
+	text-decoration:none;
+	color:#333333;
+	}
+	
+	.products div:hover{
+	background-color:#4FBDBA;
+	color:#FFFFFF;
+	}
+</style>
+<body>
+
+<div class="header">
+	<div id="logopic"><img src="logo.jpeg" alt="Logo"></div>
+	<div id="logo">Tech Select</div>
+</div>
+
+<div class="nav">
+	<div id="home"><a href="#">Home</a></div>
+	<div><a href="#">Categories</a></div>
+	<div><a href="#">Products</a></div>
+	<div><a href="#">Cart</a></div>
+	<div><a href="#">About Us</a></div>
+</div>
+
+<div class="products">
+	<div><a href="#"><img src="CrucialP2Ssd.png" alt="Crucial P2 SSD.img" >
+	</a><p>Crucial P2 SSD 500GB<br> High Speed</p></div>
+	<div><a href="#"><img src="Crucial2.5inSsd.png" alt="Crucial 2.5 SSD MX500.img"  >
+	</a><p>Crucial 2.5 SSD MX500<br> </p></div>
+	<div><a href="#"><img src="AdataSsd.jpg" alt="ADATA SSD SU650.img"  >
+	</a><p>ADATA SSD SU650<br> </p></div>
+	<div><a href="#"><img src="Adata2TBSsd.jpg" alt="ADATA SSD 2TB.img"  >
+	</a><p>ADATA SSD 2TB<br> </p></div>
+	<div><a href="#"><img src="KingstonSsd.jpg" alt="Kingston DC 600M SSD.img"  >
+	</a><p>Kingston DC 600M SSD<br> </p></div>
+	<div><a href="#"><img src="Kingston120Ssd.jpg" alt="Kingston 120GB SSD.img"  >
+	</a><p>Kingston 120GB SSD<br> </p></div>
+	<div><a href="#"><img src="RedDragonSsd.jpg" alt="ReDragon Dragon Knight Nvme Ssd.img"  >
+	</a><p>ReDragon Dragon Knight Nvme Ssd<br> </p></div>
+	<div><a href="#"><img src="RedDragonSsd2.jpg" alt="ReDragon Blaze 512GB Ssd.img"  >
+	</a><p>ReDragon Blaze 512GB Ssd<br> </p></div>
+</div>
+</body>
+</html>
+
