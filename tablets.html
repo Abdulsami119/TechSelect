@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tablets</title>
+	<meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+</head>
+<style>
+
+	body{
+	background-color:#0F0F0F;
+	margin:0px;
+	}
+
+	.header{
+	display:flex;
+	background-color:white;
+	padding:10px;
+	margin:0px;
+	text-align:center;
+	}
+	
+	#logopic img{
+	width:150px;
+	height:150px;
+	border-radius:15px;
+	margin-top:30px;
+	margin-left:20px;
+	}
+	
+	#logo{
+	padding:30px;
+	margin-left:80px;
+	text-align:left;
+	color:black;
+	font-size:42px;
+	margin-top:35px;
+	}
+
+	#top-right {
+	top: 10px;
+	right: 10px;
+	}
+
+	#top-right button{
+	width:100px;
+	height:70px;
+	border-radius: 15px;
+	margin-left: 1210px;
+	margin-top: 50px;
+	background-color:#1E1E1E;
+	color:#FFFFFF;
+	border:none;
+	}
+
+	.nav{
+	display:flex;
+	background-color:black;
+	text-align:center;
+	}
+
+	.nav div{
+	background-color:#1E1E1E;
+	padding:20px;
+	margin-left:20px;
+	margin-right:20px;
+	font-size:20px;
+	font-family: "Lucida Console";
+	text-align:justified;
+	border-radius:10px;
+	height:15px;
+	}
+
+	#home{
+	margin-left:600px;
+	}
+
+	.nav div a{
+	display:block;
+	text-decoration:none;
+	color:#FFFFFF;
+	}
+	
+	.nav div:hover{
+	background-color:#333333;
+	cursor:pointer;
+	color:#FFFFFF;
+	}
+
+	.products{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	align-items:stretch;
+	gap:20px;
+	background-color:white;
+	padding:30px;
+        grid-template-columns: repeat(3, 1fr);
+	}
+
+	.products div{
+	background-color:#1E1E1E;
+	padding:20px;
+	margin:20px;
+	font-size:24px;
+	color:#FFFFFF;
+	border-radius:15px;
+	box-shadow:0 5px 15px rgba(0,0,0,0.8);
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	}
+	
+	.products div img{
+	width:250px;
+	height:150px;
+	margin-top:30px;
+	margin-bottom:0px;
+	}
+	
+	.products div a{
+	display:block;
+	text-decoration:none;
+	color:#FFFFFF;
+	}
+	
+	.products div:hover{
+	background-color:#2A2A2A;
+	color:#FFFFFF;
+	}
+	.action-buttons{
+	display:flex;
+	justify-content:center;
+	gap:10px;
+	margin-top:auto;
+	}
+
+	.action-buttons button{
+	padding:8px 14px;
+	font-size:14px;
+	font-weight:bold;
+	border:none;
+	border-radius:8px;
+	cursor:pointer;
+	background-color:#333333;
+	color:white;
+	font-family:"Lucida Console";
+	}
+
+	.action-buttons button:hover{
+	background-color:#555555;
+	}
+
+</style>
+<body>
+
+<div class="header">
+	<div id="logopic"><img src="logo.jpeg" alt="Logo"></div>
+	<div id="logo">Tech Select</div>
+	<div id="top-right">
+	<a href="login page.html"><button>Login</button></a></div>	
+</div>
+
+<div class="nav">
+	<div id="home"><a href="#">Home</a></div>
+	<div><a href="#">Categories</a></div>
+	<div><a href="#">Products</a></div>
+	<div><a href="#">Cart</a></div>
+	<div><a href="#">About Us</a></div>
+</div>
+
+<div class="products">
+	<div><a href="#"><img src="C:\Users\HLS\Documents\assignments\HTML LAB\Samsung Galaxy Tab S10 Lite.webp" >
+	</a><p>Samsung Galaxy Tab S10 Lite<br> </p>
+	<div class="action-buttons">
+	<button onclick="addToCart('Samsung Galaxy Tab S10 Lite')">Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+<div><a href="#"><img src="C:\Users\HLS\Documents\assignments\HTML LAB\iPad Pro.jpg" >
+	</a><p>Iphone iPad Pro" <br> </p>
+	<div class="action-buttons">
+	<button onclick="addToCart('Iphone iPad Pro')">Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+<div><a href="#"><img src="C:\Users\HLS\Documents\assignments\HTML LAB\Xiaomi+Redmi+Pad+7+Pro+12GB+RAM+512GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26568.webp" >
+	</a><p> Xiaomi Redmi Pad 7 Pro  <br> </p>
+	<div class="action-buttons">
+	<button onclick="addToCart(' Xiaomi Redmi Pad 7 Pro ')">Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+<div><a href="#"><img src="C:\Users\HLS\Documents\assignments\HTML LAB\Samsung+Galaxy+Tab+S11+Ultra_-_26784.webp" >
+	</a><p>Samsung Galaxy Tab S11 Ultra<br> </p>
+	<div class="action-buttons">
+	<button onclick="addToCart('Samsung Galaxy Tab S11 Ultra')">Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+	
+<div><a href="#"><img src="C:\Users\HLS\Documents\assignments\HTML LAB\Apple+iPad+Air+13+M3+Chip+256GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26566.webp" >
+	</a><p>Apple iPad Air 13 <br> </p>
+	<div class="action-buttons">
+	<button onclick="addToCart('Apple iPad Air 13 ')">Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+<div><a href="#"><img src="C:\Users\HLS\Documents\assignments\HTML LAB\Surface+Pro+10+Core+Ultra+7+16GB+RAM+512GB+SSD+Windows+11+Price+in+Pakistan,+Specifications,+Features_-_25400.webp" >
+	</a><p>Surface Pro 10 Core Ultra 7 <br> </p>
+	<div class="action-buttons">
+	<button onclick="addToCart('Surface Pro 10 Core Ultra 7 ')">Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+</div>
+<script>
+	let cart = [];
+	function addToCart(productName) 
+	{
+ 	cart.push(productName);
+ 	alert(productName + " added to cart!");
+ 	console.log("Cart:", cart);
+	}
+</script>
+
+</body>
+</html>
