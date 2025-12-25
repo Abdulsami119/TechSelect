@@ -1,115 +1,162 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Products</title>
+	<meta name="viewport" content="width=device-wdith, initial-scale=1.0">
 </head>
 <style>
 
 	body{
-	background-color:#D0F4F7;
+	background-color:#0F0F0F;
 	margin:0px;
 	}
 
 	.header{
 	display:flex;
-	background-color:#4FBDBA;
-	padding:60px;
+	background-color:white;
+	padding:10px;
 	margin:0px;
 	text-align:center;
 	}
 	
 	#logopic img{
-	width:100px;
+	width:150px;
 	height:150px;
 	border-radius:15px;
+	margin-top:30px;
+	margin-left:20px;
 	}
 	
 	#logo{
 	padding:30px;
 	margin-left:80px;
 	text-align:left;
+	color:black;
+	font-size:42px;
+	margin-top:35px;
+	}
+
+	#top-right {
+	top: 10px;
+	right: 10px;
+	}
+
+	#top-right button{
+	width:100px;
+	height:70px;
+	border-radius: 15px;
+	margin-left: 1210px;
+	margin-top: 50px;
+	background-color:#1E1E1E;
 	color:#FFFFFF;
-	font-size:80px;
+	border:none;
 	}
 
 	.nav{
 	display:flex;
-	background-color:#FFB347;
+	background-color:black;
 	text-align:center;
 	}
 
 	.nav div{
-	background-color:#FFD580;
-	padding:14px;
-	margin-left:15px;
-	margin-right:15px;
+	background-color:#1E1E1E;
+	padding:20px;
+	margin-left:20px;
+	margin-right:20px;
 	font-size:20px;
 	font-family: "Lucida Console";
 	text-align:justified;
 	border-radius:10px;
-	height:20px;
+	height:15px;
 	}
 
 	#home{
-	margin-left:500px;
+	margin-left:600px;
 	}
 
 	.nav div a{
 	display:block;
 	text-decoration:none;
-	color:#333333;
+	color:#FFFFFF;
 	}
 	
 	.nav div:hover{
-	background-color:#FF8C42;
+	background-color:#333333;
 	cursor:pointer;
 	color:#FFFFFF;
 	}
 
 	.products{
 	display:grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	align-items:stretch;
 	gap:20px;
-	background-color:#A3D2CA;
+	background-color:white;
 	padding:30px;
-	margin-left:250px;
 	}
 
 	.products div{
-	background-color:#FFFFFF;
+	background-color:#1E1E1E;
 	padding:20px;
 	margin:20px;
 	font-size:24px;
-	color:#333333;
+	color:#FFFFFF;
 	border-radius:15px;
-	height:270px;
-	box-shadow:0 5px 15px rgba(0,0,0,0.2);
+	box-shadow:0 5px 15px rgba(0,0,0,0.8);
 	text-align:center;
+	display:flex;
+	flex-direction:column;
 	}
 	
 	.products div img{
 	width:250px;
 	height:150px;
-	margin-top:40px;
-	margin-bottom:15px;
+	margin-top:30px;
+	margin-bottom:0px;
 	}
 	
 	.products div a{
 	display:block;
 	text-decoration:none;
-	color:#333333;
+	color:#FFFFFF;
 	}
 	
 	.products div:hover{
-	background-color:#4FBDBA;
+	background-color:#2A2A2A;
 	color:#FFFFFF;
 	}
+	.action-buttons{
+	display:flex;
+	justify-content:center;
+	gap:10px;
+	margin-top:auto;
+	}
+
+	.action-buttons button{
+	padding:8px 14px;
+	font-size:14px;
+	font-weight:bold;
+	border:none;
+	border-radius:8px;
+	cursor:pointer;
+	background-color:#333333;
+	color:white;
+	font-family:"Lucida Console";
+	}
+
+	.action-buttons button:hover{
+	background-color:#555555;
+	}
+
 </style>
 <body>
 
 <div class="header">
 	<div id="logopic"><img src="logo.png" alt="Logo"></div>
 	<div id="logo">Tech Select</div>
+	<div id="top-right">
+	<a href="login page.html"><button>Login</button></a></div>	
 </div>
 
 <div class="nav">
@@ -122,22 +169,127 @@
 
 <div class="products">
 	<div><a href="#"><img src="CrucialP2Ssd.png" alt="Crucial P2 SSD.img" >
-	</a><p>Crucial P2 SSD 500GB<br> High Speed</p></div>
+	</a><p>Crucial P2 SSD 500GB<br> High Speed</p>
+	<div class="action-buttons">
+	<button onclick="addToCart('Crucial P2 SSD 500GB')">Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
 	<div><a href="#"><img src="Crucial2.5inSsd.png" alt="Crucial 2.5 SSD MX500.img"  >
-	</a><p>Crucial 2.5 SSD MX500<br> </p></div>
+	</a><p>Crucial 2.5 SSD MX500<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
 	<div><a href="#"><img src="AdataSsd.jpg" alt="ADATA SSD SU650.img"  >
-	</a><p>ADATA SSD SU650<br> </p></div>
+	</a><p>ADATA SSD SU650<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
 	<div><a href="#"><img src="Adata2TBSsd.jpg" alt="ADATA SSD 2TB.img"  >
-	</a><p>ADATA SSD 2TB<br> </p></div>
+	</a><p>ADATA SSD 2TB<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
 	<div><a href="#"><img src="KingstonSsd.jpg" alt="Kingston DC 600M SSD.img"  >
-	</a><p>Kingston DC 600M SSD<br> </p></div>
+	</a><p>Kingston DC 600M SSD<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
 	<div><a href="#"><img src="Kingston120Ssd.jpg" alt="Kingston 120GB SSD.img"  >
-	</a><p>Kingston 120GB SSD<br> </p></div>
+	</a><p>Kingston 120GB SSD<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
 	<div><a href="#"><img src="RedDragonSsd.jpg" alt="ReDragon Dragon Knight Nvme Ssd.img"  >
-	</a><p>ReDragon Dragon Knight Nvme Ssd<br> </p></div>
+	</a><p>ReDragon Dragon Knight Nvme Ssd<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
 	<div><a href="#"><img src="RedDragonSsd2.jpg" alt="ReDragon Blaze 512GB Ssd.img"  >
-	</a><p>ReDragon Blaze 512GB Ssd<br> </p></div>
+	</a><p>ReDragon Blaze 512GB Ssd<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+	<div><a href="#"><img src="CorsairVengeance32GBDDR5.png" alt="Corsair Vengeance 32GB DDR5.img"  >
+	</a><p>Corsair Vengeance 32GB DDR5 Ram 6000MHz<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+	<div><a href="#"><img src="Kingston8GBDDR4.jpg" alt="Kingston 8GB DDR4 3200Mhz.img"  >
+	</a><p>Kingston 8GB DDR4 Ram 3200Mhz.img<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+	<div><a href="#"><img src="Adata16GBDDR4.jpg" alt="Adata 16GB DDR4 6000Mhz.img"  >
+	</a><p>Adata 16GB DDR4 Ram 6000Mhz<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+	<div><a href="#"><img src="ViperVenom32GBDDR5.jpg" alt="Viper Venom 32GB DDR5.img"  >
+	</a><p>Viper Venom 32GB DDR5 Ram 5600MHz<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+	<div><a href="#"><img src="Xpg8GBDDR4.jpg" alt="XPG 8GB DDR4 3200Mhz.img"  >
+	</a><p>XPG 8GB DDR4 Ram 3200Mhz<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+	<div><a href="#"><img src="ApacerPanther16GBDDR4.webp" alt="Apacer Panther 16GB DDR4.img"  >
+	</a><p>Apacer Panther 16GB Ram DDR4<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+	<div><a href="#"><img src="Kingsman16GBDDR4.webp" alt="Kingsman 16GB DDR4 3200Mhz.img"  >
+	</a><p>Kingsman 16GB DDR4 Ram 3200Mhz<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
+	<div><a href="#"><img src="GSkillDDR4.webp" alt="G.Skill DDR4.img"  >
+	</a><p>G.Skill DDR4 Ram 3200Mhz<br> </p>
+	<div class="action-buttons">
+	<button>Add to Cart</button>
+	<button>Buy Now</button>
+	</div></div>
+
 </div>
+<script>
+	let cart = [];
+	function addToCart(productName) 
+	{
+ 	cart.push(productName);
+ 	alert(productName + " added to cart!");
+ 	console.log("Cart:", cart);
+	}
+</script>
+
 </body>
 </html>
-
