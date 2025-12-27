@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+</head>
+
+<style>
+    body {
+        background-color: white;
+        margin: 0px;
+    }
+
+    .header {
+        display: flex;
+        background-color: white;
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    #logopic img {
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    #logo {
+        padding: 30px;
+        margin-left: 80px;
+        text-align: left;
+        color: black;
+        font-size: 42px;
+        margin-top: 35px;
+    }
+
+    #top-right {
+        top: 10px;
+        right: 10px;
+    }
+
+    #top-right button {
+        width: 100px;
+        height: 70px;
+        border-radius: 15px;
+        margin-left: 1210px;
+        margin-top: 50px;
+        background-color: #1E1E1E;
+        color: #FFFFFF;
+        border: none;
+    }
+
+    .nav {
+        display: flex;
+        background-color: black;
+        text-align: center;
+    }
+
+    .nav div {
+        background-color: #1E1E1E;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-family: "Lucida Console";
+        text-align: justified;
+        border-radius: 10px;
+    }
+
+    #home {
+        margin-left: 600px;
+    }
+
+    .nav div a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .nav div:hover {
+        background-color: #333333;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
+    .dropdown {
+        position: relative;
+        background-color: pink;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-family: "Lucida Console";
+        border-radius: 10px;
+    }
+
+    .dropdown > a {
+        color: pink;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1E1E1E;
+        min-width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 12px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: #1E1E1E;
+        border-radius: 0;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #333333;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover {
+        background-color: orange;
+        cursor: pointer;
+    }
+
+    .heading {
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: black;
+        border-radius: 25px;
+        margin-left: 800px;
+        margin-right: 800px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        gap: 20px;
+        background-color: white;
+        padding: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products div {
+        background-color: #1E1E1E;
+        padding: 20px;
+        margin: 20px;
+        font-size: 24px;
+        color: #FFFFFF;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products div img {
+        width: 250px;
+        height: 150px;
+        margin-top: 30px;
+        margin-left: 125px;
+        margin-bottom: 0px;
+    }
+
+    .products div a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .products div:hover {
+        background-color: #2A2A2A;
+        color: #FFFFFF;
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: auto;
+    }
+
+    .action-buttons button {
+        padding: 8px 14px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: #333333;
+        color: white;
+        font-family: "Lucida Console";
+    }
+
+    .action-buttons button:hover {
+        background-color: #555555;
+    }
+
+    .product-card {
+        position: relative;
+    }
+
+    .price {
+        color: #00ff99;
+        font-size: 22px;
+        margin: 10px 0;
+        display: none;
+        font-weight: bold;
+    }
+
+    .category-card a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .category-card {
+        background-color: #1E1E1E;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+        text-align: center;
+        padding: 50px;
+        transition: 0.3s;
+
+    }
+
+    .category-card:hover {
+        background-color: #2A2A2A;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .category-card img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+
+    }
+
+    .category-card h2 {
+        margin-top: 15px;
+        font-family: "Lucida Console";
+    }
+</style>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div id="logopic">
+            <img src="logo.png">
+        </div>
+        <div id="logo">Tech Select</div>
+        <div id="top-right">
+            <a href="login page.html">
+                <button>Sign Up</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="nav">
+        <div id="home"><a href="Home.html">Home</a></div>
+
+        <div class="dropdown">
+            <a href="#">Products ▾</a>
+            <div class="dropdown-content">
+                <a href="Accessories.html">Accessories</a>
+                <a href="Tablets.html">Tablets</a>
+                <a href="Phones.html">Phones</a>
+                <a href="Laptops.html">Laptops</a>
+            </div>
+        </div>
+
+        <div><a href="Cart.html">Cart</a></div>
+        <div><a href="AboutUs.html">About Us</a></div>
+    </div>
+
+    <!-- HEADING -->
+    <div class="heading">
+        <br>
+        <h1>Home</h1>
+        <br>
+    </div>
+
+    <!-- CATEGORY CARDS -->
+    <div class="products">
+
+        <div class="category-card">
+            <a href="Laptops.html">
+                <img src="C:\Users\HLS\Documents\assignments\HTML LAB\download LAPTOP.jpg">
+                <h2>Laptops</h2>
+            </a>
+        </div>
+
+        <div class="category-card">
+            <a href="Phones.html">
+                <img src="C:\Users\HLS\Documents\assignments\HTML LAB\home mobies.png">
+                <h2>Phones</h2>
+            </a>
+        </div>
+
+        <div class="category-card">
+            <a href="Tablets.html">
+                <img src="C:\Users\HLS\Documents\assignments\HTML LAB\6f33a8ba-9a8a-453e-8950-bc70940c4bbe.png">
+                <h2>Tablets</h2>
+            </a>
+        </div>
+
+        <div class="category-card">
+            <a href="Accessories.html">
+<img  src = "C:\Users\HLS\Documents\assignments\HTML LAB\home accessories.png">
+               
+                <h2>Accessories</h2>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
