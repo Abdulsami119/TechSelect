@@ -1,181 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Products</title>
+    <title>TechSelect | Login</title>
 
     <style>
-        body{
-            background-color:#D0F4F7;
-            margin:0px;
+        body {
+            background-color: #EFFFFB;
+            margin: 0;
         }
 
         /* ===== HEADER ===== */
-        .header{
-            display:flex;
-            background-color:#4FBDBA;
-            padding:60px;
-            margin:0px;
-            text-align:center;
+        .header {
+            display: flex;
+            background-color: #94B4C1A;
+            padding: 10px;
         }
 
-        #logopic img{
-            width:100px;
-            height:150px;
-            border-radius:15px;
+        #logopic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
         }
 
-        #logo{
-            padding:30px;
-            margin-left:80px;
-            color:#FFFFFF;
-            font-size:80px;
+        #logo {
+            padding: 30px;
+            margin-left: 80px;
+            color: white;
+            font-size: 80px;
         }
+
         /* ===== NAV ===== */
         .nav{
-            display:flex;
-            background-color:black;
-            text-align:center;
-        }
+	display:flex;
+	background-color:black;
+	text-align:center;
+	}
 
-        .nav div{
-            background-color:#1E1E1E;
-            padding:20px;
-            margin-left:20px;
-            margin-right:20px;
-            font-size:20px;
-            font-family:"Lucida Console";
-            border-radius:10px;
-        }
+	.nav div{
+	background-color:#1E1E1E;
+	padding:20px;
+	margin-left:20px;
+	margin-right:20px;
+	font-size:20px;
+	font-family: "Lucida Console";
+	text-align:justified;
+	border-radius:10px;
+	}
 
-        #home{
-            margin-left:600px;
-        }
+	#home{
+	margin-left:600px;
+	}
+	
+	
+	.nav div a{
+	display:block;
+	text-decoration:none;
+	color:#FFFFFF;
+	}
+	
+	.nav div:hover{
+	background-color:#333333;
+	cursor:pointer;
+	color:#FFFFFF;
+	}
 
-        .nav div a{
-            display:block;
-            text-decoration:none;
-            color:#FFFFFF;
-        }
+	.dropdown {
+	position: relative;
+	background-color:pink;
+	padding:20px;
+	margin-left:20px;
+	margin-right:20px;
+	font-size:20px;
+	font-family:"Lucida Console";
+	border-radius:10px;
+	}
 
-        .nav div:hover{
-            background-color:#333333;
-            cursor:pointer;
-        }
+	.dropdown > a {
+	color:pink;
+	text-decoration:none;
+	display:block;
+	}
 
-        /* ===== DROPDOWN ===== */
-        .dropdown{
-            position:relative;
-            background-color:pink;
-            padding:20px;
-            margin-left:20px;
-            margin-right:20px;
-            font-size:20px;
-            font-family:"Lucida Console";
-            border-radius:10px;
-        }
+	.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	background-color: #1E1E1E;
+	min-width: 200px;
+	border-radius: 10px;   /* outer box only */
+	box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+	overflow: hidden;     /* IMPORTANT: clips inner items */
+	z-index: 100;
+	}
 
-        .dropdown > a{
-            color:pink;
-            text-decoration:none;
-            display:block;
-        }
+	.dropdown-content a {
+	display: block;
+	padding: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 18px;
+	background-color: #1E1E1E;   
+	border-radius: 0;           
+	}
 
-        .dropdown-content{
-            display:none;
-            position:absolute;
-            top:60px;
-            left:0;
-            background-color:#1E1E1E;
-            min-width:200px;
-            border-radius:10px;
-            overflow:hidden;
-            z-index:100;
-        }
+	.dropdown-content a:hover {
+	background-color: #333333;
+	}
 
-        .dropdown-content a{
-            display:block;
-            padding:12px;
-            color:#FFFFFF;
-            text-decoration:none;
-            font-size:18px;
-        }
+	.dropdown:hover .dropdown-content {
+	display:block;
+	}
 
-        .dropdown-content a:hover{
-            background-color:#333333;
-        }
-
-        .dropdown:hover .dropdown-content{
-            display:block;
-        }
-
-        .dropdown:hover{
-            background-color:orange;
-            cursor:pointer;
-        }
+	.dropdown:hover {
+	background-color:orange;
+	cursor:pointer;
+	}
 
         /* ===== FORM AREA ===== */
-        .container{
-            display:flex;
-            background-color:#A3D2CA;
-            margin:10px;
-            border-radius:10px;
+        .box {
+            background: #BBDCE5;
+            border: 1px solid #dbdbdb;
+            border-radius: 15px;
+            padding: 20px;
+        }
+	.margin_for_signup {
+	   margin-top:50px;
+	   margin-bottom:50px;
+	   margin-left:500px;
+	   margin-right:500px;
+	}
+	.margin_for_forgot_password {
+		margin-left:500px;
+		margin-right:500px;
+	}
+        input {
+            width: 95%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
         }
 
-        .left{
-            width:630px;
-            padding:40px;
-            margin-left:480px;
-            margin-right:480px;
+        /* ERROR TEXT STYLE */
+        .error {
+            color: red;
+            font-size: 13px;
+            display: block;
+            margin-bottom: 10px;
         }
 
-        .box{
-            background:white;
-            border:1px solid #dbdbdb;
-            border-radius:15px;
-            padding:20px;
-            margin:15px 0;
+        button {
+            width: 98%;
+            padding: 12px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
         }
 
-        input{
-            width:95%;
-            padding:10px;
-            margin:5px 0;
-            border:1px solid #dbdbdb;
-            border-radius:5px;
+            button:hover {
+                background-color: #0078cc;
+            }
+
+        .small-links {
+            text-align: center;
+            font-size: 14px;
         }
 
-        /* ERROR TEXT */
-        .error{
-            color:red;
-            font-size:13px;
-            display:block;
-            margin-bottom:10px;
-        }
-
-        button{
-            width:98%;
-            padding:12px;
-            background-color:#0095f6;
-            color:white;
-            border:none;
-            border-radius:5px;
-            font-size:16px;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background-color:#0078cc;
-        }
-
-        .small-links{
-            text-align:center;
-            font-size:14px;
-        }
-
-        .small-links a{
-            color:#0095f6;
-            text-decoration:none;
-        }
+            .small-links a {
+                color: #0095f6;
+                text-decoration: none;
+            }
     </style>
 </head>
 
@@ -190,24 +188,23 @@
 <!-- ===== NAV BAR ===== -->
 <div class="nav">
     <div id="home"><a href="Home.html">Home</a></div>
-    <div class="dropdown">
-        <a href="#">Products ▾</a>
-        <div class="dropdown-content">
-            <a href="Accessories.html">Accessories</a>
-            <a href="Tablets.html">Tablets</a>
-            <a href="Phones.html">Phones</a>
-            <a href="Laptops.html">Laptops</a>
-        </div>
-    </div>
-    <div><a href="Cart.html">Cart</a></div>
-    <div><a href="AboutUs.html">About Us</a></div>
+	<div class="dropdown">
+	<a href="#">Products ▾</a>
+	<div class="dropdown-content">
+	<a href="Accessories.html">Accessories</a>
+	<a href="Tablets.html">Tablets</a>
+	<a href="Phones.html">Phones</a>
+	<a href="Laptops.html">Laptops</a>
+	</div>
+	</div>
+	<div><a href="Cart.html">Cart</a></div>
+	<div><a href="AboutUs.html">About Us</a></div>
 </div>
 
 <!-- ===== LOGIN FORM ===== -->
-<div class="container">
     <div class="left">
 
-        <div class="box">
+        <div class="box margin_for_signup">
             <h2 style="text-align:center;">Log In</h2>
 
             <form onsubmit="return validateLogin()">
@@ -224,13 +221,12 @@
             </form>
         </div>
 
-        <div class="box small-links">
+        <div class="box small-links margin_for_forgot_password">
             <p>Don’t have an account?</p>
             <a href="SignUp.html">Sign up</a>
         </div>
 
     </div>
-</div>
 
 <!-- ===== JAVASCRIPT ===== -->
 <script>
