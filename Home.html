@@ -18,6 +18,9 @@
         padding: 10px;
         margin: 0px;
         text-align: center;
+	background-image:url("header_back.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
     }
 
     #logopic img {
@@ -51,27 +54,33 @@
         background-color: #1E1E1E;
         color: #FFFFFF;
         border: none;
+	border: 5px solid gold;
     }
 
     .nav {
         display: flex;
         background-color: black;
         text-align: center;
+	border-top: 5px solid gold;
+	border-bottom: 5px solid gold;
     }
 
     .nav div {
         background-color: #1E1E1E;
         padding: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
+	margin-top:3px;
+	margin-bottom:3px;
+        margin-left: 60px;
+        margin-right: 60px;
         font-size: 20px;
         font-family: "Lucida Console";
         text-align: justified;
         border-radius: 10px;
+	border: 3px solid gold;
     }
 
     #home {
-        margin-left: 600px;
+        margin-left: 650px;
     }
 
     .nav div a {
@@ -123,7 +132,8 @@
         text-decoration: none;
         font-size: 18px;
         background-color: #1E1E1E;
-        border-radius: 0;
+        border-radius: 10px;
+	border: 3px solid gold;
     }
 
     .dropdown-content a:hover {
@@ -140,32 +150,39 @@
     }
 
     .heading {
-        display: block;
-        color: white;
-        text-align: center;
-        background-color: black;
-        border-radius: 25px;
-        margin-left: 800px;
-        margin-right: 800px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+    grid-column: 1 / -1;  
+    display: block;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 25px;
+    margin: 0 auto 50px auto;
+    width: fit-content;
+    padding: 0 60px;
+}
 
     .products {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: stretch;
-        gap: 40px;
         background-color: white;
         padding: 30px;
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 50px;
     }
 
-    .products div{
+    .products > div:not(.heading){
 	background-color:black;
         border-radius: 15px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.8);
         text-align: center;
         padding: 0px;
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom:30px;
         transition: 0.3s;
      }
 
@@ -222,14 +239,12 @@
     <div><a href="AboutUs.html">About Us</a></div>
     </div>
 
-
-    <div class="heading">
+    <div class="products">
+ <div class="heading">
         
         <br><h1>Home</h1>
         <br>
     </div>
-
-    <div class="products">
 
         <div>
             <a href="Laptops.html">
