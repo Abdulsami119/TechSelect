@@ -67,7 +67,6 @@
 	font-family: "Lucida Console";
 	text-align:justified;
 	border-radius:10px;
-	height:15px;
 	}
 
 	#home{
@@ -85,6 +84,71 @@
 	cursor:pointer;
 	color:#FFFFFF;
 	}
+
+	.dropdown {
+	position: relative;
+	background-color:pink;
+	padding:20px;
+	margin-left:20px;
+	margin-right:20px;
+	font-size:20px;
+	font-family:"Lucida Console";
+	border-radius:10px;
+	}
+
+	.dropdown > a {
+	color:pink;
+	text-decoration:none;
+	display:block;
+	}
+
+	.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	background-color: #1E1E1E;
+	min-width: 200px;
+	border-radius: 10px;   /* outer box only */
+	box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+	overflow: hidden;     /* IMPORTANT: clips inner items */
+	z-index: 100;
+	}
+
+	.dropdown-content a {
+	display: block;
+	padding: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 18px;
+	background-color: #1E1E1E;   
+	border-radius: 0;           
+	}
+
+	.dropdown-content a:hover {
+	background-color: #333333;
+	}
+
+	.dropdown:hover .dropdown-content {
+	display:block;
+	}
+
+	.dropdown:hover {
+	background-color:orange;
+	cursor:pointer;
+	}
+
+	.heading {
+	color:black;
+	text-align:center;
+	background-color:white;
+	border-radius:25px;
+	margin-left:800px;
+	margin-right:800px;
+	margin-top:50px;
+	margin-bottom:50px;
+	}
+
 
 	.products{
 	display:grid;
@@ -153,18 +217,31 @@
 <body>
 
 <div class="header">
-	<div id="logopic"><img src="logo.jpeg" alt="Logo"></div>
+	<div id="logopic"><img src="logo.png" alt="Logo"></div>
 	<div id="logo">Tech Select</div>
 	<div id="top-right">
 	<a href="login page.html"><button>Login</button></a></div>	
 </div>
+</div>
+<div class="heading">
+	<br>
+	<h1>Tablets</h1>
+	<br>
+</div>
 
 <div class="nav">
-	<div id="home"><a href="#">Home</a></div>
-	<div><a href="#">Categories</a></div>
-	<div><a href="#">Products</a></div>
-	<div><a href="#">Cart</a></div>
-	<div><a href="#">About Us</a></div>
+	<div id="home"><a href="Home.html">Home</a></div>
+	<div class="dropdown">
+	<a href="#">Products ▾</a>
+	<div class="dropdown-content">
+	<a href="Accessories.html">Accessories</a>
+	<a href="Tablets.html">Tablets</a>
+	<a href="Phones.html">Phones</a>
+	<a href="Laptops.html">Laptops</a>
+	</div>
+	</div>
+	<div><a href="Cart.html">Cart</a></div>
+	<div><a href="AboutUs.html">About Us</a></div>
 </div>
 
 <div class="products">

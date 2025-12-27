@@ -28,9 +28,7 @@
             color: white;
             font-size: 80px;
         }
-
-        /* ===== NAV ===== */
-        .nav{
+	.nav{
 	display:flex;
 	background-color:black;
 	text-align:center;
@@ -74,6 +72,7 @@
 	border-radius:10px;
 	}
 
+
 	.dropdown > a {
 	color:pink;
 	text-decoration:none;
@@ -115,7 +114,6 @@
 	background-color:orange;
 	cursor:pointer;
 	}
-
         /* ===== FORM AREA ===== */
         .container {
             display: flex;
@@ -192,7 +190,7 @@
 
     <!-- ===== NAV BAR ===== -->
     <div class="nav">
-      <div id="home"><a href="Home.html">Home</a></div>
+	<div id="home"><a href="Home.html">Home</a></div>
 	<div class="dropdown">
 	<a href="#">Products ▾</a>
 	<div class="dropdown-content">
@@ -204,7 +202,7 @@
 	</div>
 	<div><a href="Cart.html">Cart</a></div>
 	<div><a href="AboutUs.html">About Us</a></div>
-    </div>
+</div>
 
     <!-- ===== SIGNUP FORM ===== -->
     <div class="container">
@@ -256,6 +254,7 @@
     <script>
 function validateSignup() {
 
+    // Get input elements
     let fname = document.getElementById("fname");
     let lname = document.getElementById("lname");
     let username = document.getElementById("username");
@@ -268,21 +267,25 @@ function validateSignup() {
 
     let isValid = true;
 
+    // First name validation
     if (fname.value.trim() === "") {
         document.getElementById("fnameError").innerText = "First name is required";
         isValid = false;
     }
 
+    // Last name validation
     if (lname.value.trim() === "") {
         document.getElementById("lnameError").innerText = "Last name is required";
         isValid = false;
     }
 
+    // Username validation
     if (username.value.trim() === "") {
         document.getElementById("usernameError").innerText = "Username is required";
         isValid = false;
     }
 
+    // Email validation
     if (email.value.trim() === "") {
         document.getElementById("emailError").innerText = "Email is required";
         isValid = false;
@@ -292,24 +295,34 @@ function validateSignup() {
         isValid = false;
     }
 
+    // Password validation
     if (password.value.length < 8) {
         document.getElementById("passwordError").innerText =
             "Password must be at least 8 characters";
         isValid = false;
     }
 
+    // Confirm password validation
     if (confirm.value !== password.value) {
         document.getElementById("confirmError").innerText =
             "Passwords do not match";
         isValid = false;
     }
 
-    // ✅ ONLY ADDITION
+    // ✅ SUCCESS
     if (isValid) {
         alert("Account created successfully ✔");
+
+        // Clear all inputs
+        fname.value = "";
+        lname.value = "";
+        username.value = "";
+        email.value = "";
+        password.value = "";
+        confirm.value = "";
     }
 
-    return false; // prevent real submit (demo)
+    return false; // stop real submit (demo)
 }
 </script>
 
