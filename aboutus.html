@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+</head>
+<style>
+
+	body{
+	background-color:#0F0F0F;
+	margin:0px;
+	}
+
+	.header{
+	display:flex;
+	background-color:white;
+	padding:10px;
+	margin:0px;
+	text-align:center;
+	}
+	
+	#logopic img{
+	width:150px;
+	height:150px;
+	border-radius:15px;
+	margin-top:30px;
+	margin-left:20px;
+	}
+	
+	#logo{
+	padding:30px;
+	margin-left:80px;
+	text-align:left;
+	color:black;
+	font-size:42px;
+	margin-top:35px;
+	}
+
+	#top-right {
+	top: 10px;
+	right: 10px;
+	}
+
+	#top-right button{
+	width:100px;
+	height:70px;
+	border-radius: 15px;
+	margin-left: 1210px;
+	margin-top: 50px;
+	background-color:#1E1E1E;
+	color:#FFFFFF;
+	border:none;
+	}
+
+	.nav{
+	display:flex;
+	background-color:black;
+	text-align:center;
+	}
+
+	.nav div{
+	background-color:#1E1E1E;
+	padding:20px;
+	margin-left:20px;
+	margin-right:20px;
+	font-size:20px;
+	font-family: "Lucida Console";
+	text-align:justified;
+	border-radius:10px;
+	}
+
+	#home{
+	margin-left:600px;
+	}
+
+	.nav div a{
+	display:block;
+	text-decoration:none;
+	color:#FFFFFF;
+	}
+	
+	.nav div:hover{
+	background-color:#333333;
+	cursor:pointer;
+	color:#FFFFFF;
+	}
+
+	.dropdown {
+	position: relative;
+	background-color:pink;
+	padding:20px;
+	margin-left:20px;
+	margin-right:20px;
+	font-size:20px;
+	font-family:"Lucida Console";
+	border-radius:10px;
+	}
+
+
+	.dropdown > a {
+	color:pink;
+	text-decoration:none;
+	display:block;
+	}
+
+	.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	background-color: #1E1E1E;
+	min-width: 200px;
+	border-radius: 10px;   /* outer box only */
+	box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+	overflow: hidden;     /* IMPORTANT: clips inner items */
+	z-index: 100;
+	}
+
+	.dropdown-content a {
+	display: block;
+	padding: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 18px;
+	background-color: #1E1E1E;   
+	border-radius: 0;           
+	}
+
+	.dropdown-content a:hover {
+	background-color: #333333;
+	}
+
+	.dropdown:hover .dropdown-content {
+	display:block;
+	}
+
+	.dropdown:hover {
+	background-color:orange;
+	cursor:pointer;
+	}
+	.box {
+            background: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 15px;
+            padding: 20px;
+            margin-left:100px;
+	    margin-right:100px;
+	    margin-top:100px;
+        }
+	</style>
+<body>
+
+<div class="header">
+	<div id="logopic"><img src="logo.png" alt="Logo"></div>
+	<div id="logo">Tech Select</div>
+	<div id="top-right">
+	<a href="login page.html"><button>Sign Up</button></a></div>	
+</div>
+
+<div class="nav">
+	<div id="home"><a href="#">Home</a></div>
+	<div class="dropdown">
+	<a href="#">Products ▾</a>
+	<div class="dropdown-content">
+	<a href="#">Accessories</a>
+	<a href="#">Tablets</a>
+	<a href="#">Phones</a>
+	<a href="#">Laptops</a>
+	</div>
+	</div>
+	<div><a href="#">Cart</a></div>
+	<div><a href="#">About Us</a></div>
+</div>
+	<div class="box">
+	<h2>About US - TechSelect</h2>
+	<p>Welcome to TechSelect, your trusted destination for quality technology products and smart buying choices.</p>
+	<p>At TechSelect, we believe that buying tech should be simple, safe, and reliable. In a market full of confusion and fake promises, our goal is to help customers choose the right products with complete confidence.</p>
+	<h2>Who We Are</h2>
+	<p>echSelect is built by tech enthusiasts who understand how important quality, authenticity, and value for money are. We carefully select and offer products that meet our standards of performance, durability, and reliability.</p>
+	<h2>What We Offer</h2>
+	<p>We provide a wide range of technology products including gadgets, accessories, and essential electronics — all sourced from trusted brands and verified sellers.</p>
+	<p>Every product on TechSelect is:</p>
+	<ul>
+		<li>100% genuine</li>
+		<li>Quality checked</li>
+		<li>Clearly described with honest information</li>
+	</ul>
+	<h2>Why Trust TechSelect?</h2>
+	<p>Your trust matters to us. That’s why we focus on:<p>
+	<ul>
+		<li>Transparent pricing – no hidden charges</li>
+		<li>Secure payments – your data is protected</li>
+		<li>Reliable delivery – on time and carefully packed</li>
+		<li>Customer support – we’re here to help before and after your purchase</li>
+	</ul>
+	<h2>Our Mission</h2>
+	<p>Our mission is to make TechSelect a platform where customers can buy tech products without hesitation or doubt. We aim to create a safe and satisfying shopping experience for everyone.</p>
+	<h2>Our Promise</h2>
+	<p>We promise to keep improving, listening to our customers, and delivering technology you can truly rely on.</p>
+	<h3>TechSelect – Choose Smart. Buy with Confidence.</h3>
+	</div>
+</body>
+</html>

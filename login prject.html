@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Products</title>
+    <title>Tech Select | Sign Up</title>
+
     <style>
-
-        body{
-	background-color:#D0F4F7;
-	margin:0px;
-	}
-
-        .header{
-	display:flex;
-	background-color:#4FBDBA;
-	padding:60px;
-	margin:0px;
-	text-align:center;
-	}
-
-       #logopic img{
-	width:100px;
-	height:150px;
-	border-radius:15px;
-	}
-	
-	#logo{
-	padding:30px;
-	margin-left:80px;
-	text-align:left;
-	color:#FFFFFF;
-	font-size:80px;
-	}
- 
-        .nav{
-	display:flex;
-	background-color:#FFB347;
-	text-align:center;
-	}
-
-        .nav div{
-	   background-color:#FFD580;
-	   padding:14px;
-	   margin-left:15px;
-	   margin-right:15px;
-	   font-size:20px;
-	   font-family: "Lucida Console";
-	   text-align:justified;
-	   border-radius:10px;
-	   height:20px;
-	}
-
-
-
-        #home{
-	margin-left:500px;
-	}
-
-        .nav a {    
-            margin: 10px;
-            font-size: 16px;
-            text-decoration: none;
-            color:black;
+        body {
+            background-color: #D0F4F7;
+            margin: 0;
         }
 
-        .nav div:hover{
-	    background-color:#FF8C42;
-	    cursor:pointer;
-	    color:#FFFFFF;
-	}
+        /* ===== HEADER ===== */
+        .header {
+            display: flex;
+            background-color: #4FBDBA;
+            padding: 60px;
+        }
 
+        #logopic img {
+            width: 100px;
+            height: 150px;
+            border-radius: 15px;
+        }
+
+        #logo {
+            padding: 30px;
+            margin-left: 80px;
+            color: white;
+            font-size: 80px;
+        }
+
+        /* ===== NAV ===== */
+        .nav {
+            display: flex;
+            background-color: #FFB347;
+        }
+
+            .nav div {
+                background-color: #FFD580;
+                padding: 14px;
+                margin: 15px;
+                font-size: 20px;
+                font-family: "Lucida Console";
+                border-radius: 10px;
+                height: 20px;
+            }
+
+        #home {
+            margin-left: 500px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav div:hover {
+            background-color: #FF8C42;
+            cursor: pointer;
+        }
+
+        /* ===== FORM AREA ===== */
         .container {
             display: flex;
             background-color: #A3D2CA;
@@ -78,23 +70,36 @@
         .left {
             width: 630px;
             padding: 40px;
-            margin-left:480px;
-            margin-right:480px;
+            margin-left: 480px;
+            margin-right: 480px;
         }
 
-      
-        .left input {
-            width: 90%;
+        .box {
+            background: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        input {
+            width: 95%;
             padding: 10px;
-            margin: 10px 0;
+            margin: 5px 0;
             border: 1px solid #dbdbdb;
             border-radius: 5px;
-            background-color: white;
         }
 
-       
-        .left button {
-            width: 95%;
+        /* ERROR TEXT STYLE */
+        .error {
+            color: red;
+            font-size: 13px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 98%;
             padding: 12px;
             background-color: #0095f6;
             color: white;
@@ -104,86 +109,160 @@
             cursor: pointer;
         }
 
-        .left button:hover {
-            background-color: #0078cc;
-        }
+            button:hover {
+                background-color: #0078cc;
+            }
 
-
-     
-        .box {
-            background-color: white
-;
-            border: 1px solid #dbdbdb;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 15px 0;
-            color: black;
-        }
-
-       
         .small-links {
-            font-size: 14px;
-            line-height: 1.4;
             text-align: center;
+            font-size: 14px;
         }
 
-        .small-links a {
-            color: #0095f6;
-            text-decoration: none;
-        }
-
+            .small-links a {
+                color: #0095f6;
+                text-decoration: none;
+            }
     </style>
 </head>
+
 <body>
 
-
-<div class="header">
-	<div id="logopic"><img src="logo.png" alt="Logo"></div>
-	<div id="logo">Tech Select</div>
-</div>
-
-<div class="nav">
-	<div id="home"><a href="#">Home</a></div>
-	<div><a href="#">Categories</a></div>
-	<div><a href="#">Products</a></div>
-	<div><a href="#">Cart</a></div>
-	<div><a href="#">About Us</a></div>
-</div>
-
-
-<div class="container">
-
-    <div class="left">
-        <div class="box">
-            <h2 style="text-align:center;">Log In</h2>
-
-            <form>
-                <label>Username:</label><br>
-                <input type="text" placeholder="Enter  Your Username">
-
-                <label>Password:</label><br>
-                <input type="password" placeholder="Enter Correct Password">
-
-                <button type="submit">Log In</button>
-            </form>
-        </div>
-
-        
-        <div class="box small-links">
-            <p><a href="#">Forgot password?</a></p>
-            <p>Don’t have an account? </p>
-            <p><a href="#">Sign up</a></p>
-        </div>
-
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+        <div id="logopic"><img src="logo.png"></div>
+        <div id="logo">Tech Select</div>
     </div>
 
-  
+    <!-- ===== NAV BAR ===== -->
+    <div class="nav">
+        <div id="home"><a href="#">Home</a></div>
+        <div><a href="#">Categories</a></div>
+        <div><a href="#">Products</a></div>
+        <div><a href="#">Cart</a></div>
+        <div><a href="#">About Us</a></div>
+    </div>
 
-</div>
-<br><br>
+    <!-- ===== SIGNUP FORM ===== -->
+    <div class="container">
+        <div class="left">
 
+            <div class="box">
+                <h2 style="text-align:center;">Sign Up</h2>
 
+                <!-- onsubmit returns false if validation fails -->
+                <form onsubmit="return validateSignup()">
 
+                    <label>First Name</label>
+                    <input type="text" id="fname">
+                    <small class="error" id="fnameError"></small>
+
+                    <label>Last Name</label>
+                    <input type="text" id="lname">
+                    <small class="error" id="lnameError"></small>
+
+                    <label>Username</label>
+                    <input type="text" id="username">
+                    <small class="error" id="usernameError"></small>
+
+                    <label>Email</label>
+                    <input type="email" id="email">
+                    <small class="error" id="emailError"></small>
+
+                    <label>Password</label>
+                    <input type="password" id="password">
+                    <small class="error" id="passwordError"></small>
+
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirm">
+                    <small class="error" id="confirmError"></small>
+
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+
+            <div class="box small-links">
+                <p>Already have an account?</p>
+                <a href="login.html">Log in</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT VALIDATION ===== -->
+    <script>
+function validateSignup() {
+
+    // Get input elements
+    let fname = document.getElementById("fname");
+    let lname = document.getElementById("lname");
+    let username = document.getElementById("username");
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let confirm = document.getElementById("confirm");
+
+    // Clear previous errors
+    document.querySelectorAll(".error").forEach(e => e.innerText = "");
+
+    let isValid = true;
+
+    // First name validation
+    if (fname.value.trim() === "") {
+        document.getElementById("fnameError").innerText = "First name is required";
+        isValid = false;
+    }
+
+    // Last name validation
+    if (lname.value.trim() === "") {
+        document.getElementById("lnameError").innerText = "Last name is required";
+        isValid = false;
+    }
+
+    // Username validation
+    if (username.value.trim() === "") {
+        document.getElementById("usernameError").innerText = "Username is required";
+        isValid = false;
+    }
+
+    // Email validation
+    if (email.value.trim() === "") {
+        document.getElementById("emailError").innerText = "Email is required";
+        isValid = false;
+    }
+    else if (!email.value.includes("@") || !email.value.includes(".")) {
+        document.getElementById("emailError").innerText = "Enter a valid email";
+        isValid = false;
+    }
+
+    // Password validation
+    if (password.value.length < 8) {
+        document.getElementById("passwordError").innerText =
+            "Password must be at least 8 characters";
+        isValid = false;
+    }
+
+    // Confirm password validation
+    if (confirm.value !== password.value) {
+        document.getElementById("confirmError").innerText =
+            "Passwords do not match";
+        isValid = false;
+    }
+
+    // ✅ SUCCESS
+    if (isValid) {
+        alert("Account created successfully ✔");
+
+        // Clear all inputs
+        fname.value = "";
+        lname.value = "";
+        username.value = "";
+        email.value = "";
+        password.value = "";
+        confirm.value = "";
+    }
+
+    return false; // stop real submit (demo)
+}
+</script>
 
 </body>
 </html>
