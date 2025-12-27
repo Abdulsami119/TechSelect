@@ -211,6 +211,18 @@
 	.action-buttons button:hover{
 	background-color:#555555;
 	}
+	.product-card {
+	position:relative;
+	}
+
+	.price {
+	color: #00ff99;
+	font-size: 22px;
+	margin: 10px 0;
+	display: none;
+	font-weight: bold;
+	}
+
 
 </style>
 <body>
@@ -219,7 +231,7 @@
 	<div id="logopic"><img src="logo.png" alt="Logo"></div>
 	<div id="logo">Tech Select</div>
 	<div id="top-right">
-	<a href="login page.html"><button>Login</button></a></div>	
+	<a href="login.html"><button>Login</button></a></div>	
 </div>
 </div>
 
@@ -243,43 +255,57 @@
 </div>
 
 <div class="products">
-	<div><a href="#"><img src="Samsung Galaxy Tab S10 Lite.webp" >
+        
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+	<a href="#"><img src="Samsung Galaxy Tab S10 Lite.webp" >
 	</a><p>Samsung Galaxy Tab S10 Lite<br> </p>
+<p class="price">Rs. 114,999</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('Samsung Galaxy Tab S10 Lite')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-<div><a href="#"><img src="iPad Pro.jpg" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+<a href="#"><img src="iPad Pro.jpg" >
 	</a><p>Iphone iPad Pro" <br> </p>
+<p class="price">Rs. 279,200</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('Iphone iPad Pro')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-<div><a href="#"><img src="Xiaomi+Redmi+Pad+7+Pro+12GB+RAM+512GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26568.webp" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+<a href="#"><img src="Xiaomi+Redmi+Pad+7+Pro+12GB+RAM+512GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26568.webp" >
 	</a><p> Xiaomi Redmi Pad 7 Pro  <br> </p>
+<p class="price">Rs. 162,999</p>
 	<div class="action-buttons">
 	<button onclick="addToCart(' Xiaomi Redmi Pad 7 Pro ')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-<div><a href="#"><img src="Samsung+Galaxy+Tab+S11+Ultra_-_26784.webp" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+<a href="#"><img src="Samsung+Galaxy+Tab+S11+Ultra_-_26784.webp" >
 	</a><p>Samsung Galaxy Tab S11 Ultra<br> </p>
+<p class="price">Rs. 304,999</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('Samsung Galaxy Tab S11 Ultra')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 	
-<div><a href="#"><img src="Apple+iPad+Air+13+M3+Chip+256GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26566.webp" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+<a href="#"><img src="Apple+iPad+Air+13+M3+Chip+256GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26566.webp" >
 	</a><p>Apple iPad Air 13 <br> </p>
+<p class="price">Rs. 274,999</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('Apple iPad Air 13 ')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-<div><a href="#"><img src="Surface+Pro+10+Core+Ultra+7+16GB+RAM+512GB+SSD+Windows+11+Price+in+Pakistan,+Specifications,+Features_-_25400.webp" >
+
+	<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+<a href="#"><img src="Surface+Pro+10+Core+Ultra+7+16GB+RAM+512GB+SSD+Windows+11+Price+in+Pakistan,+Specifications,+Features_-_25400.webp" >
 	</a><p>Surface Pro 10 Core Ultra 7 <br> </p>
+<p class="price">Rs. 614,999</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('Surface Pro 10 Core Ultra 7 ')">Add to Cart</button>
 	<button>Buy Now</button>
@@ -294,6 +320,16 @@
  	alert(productName + " added to cart!");
  	console.log("Cart:", cart);
 	}
+	function showCardPrice(card) {
+		const price = card.querySelector(".price");
+		price.style.display = "block";
+	}
+
+	function hideCardPrice(card) {
+		const price = card.querySelector(".price");
+		price.style.display = "none";
+	}
+
 </script>
 
 </body>

@@ -215,6 +215,17 @@
 	.action-buttons button:hover{
 	background-color:#555555;
 	}
+	 .product-card {
+	position:relative;
+	}
+
+	.price {
+	color: #00ff99;
+	font-size: 22px;
+	margin: 10px 0;
+	display: none;
+	font-weight: bold;
+	}
 
 </style>
 <body>
@@ -223,7 +234,7 @@
 	<div id="logopic"><img src="logo.png" alt="Logo"></div>
 	<div id="logo">Tech Select</div>
 	<div id="top-right">
-	<a href="login page.html"><button>Login</button></a></div>	
+	<a href="login.html"><button>Login</button></a></div>	
 </div>
 
 <div class="nav">
@@ -248,43 +259,55 @@
 
 
 <div class="products">
-	<div><a href="#"><img src="Apple MacBook Pro 14.webp" alt="Crucial P2 SSD.img" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+	<a href="#"><img src="Apple MacBook Pro 14.webp" alt="Crucial P2 SSD.img" >
 	</a><p>Apple MacBook Pro 14<br> </p>
+<p class="price">Rs. 634,999</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('Apple MacBook Pro 14')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-	<div><a href="#"><img src="HP Omnibook X Flip 14 Next Gen AI Laptop.jpg" alt="Crucial P2 SSD.img" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+	<a href="#"><img src="HP Omnibook X Flip 14 Next Gen AI Laptop.jpg" alt="Crucial P2 SSD.img" >
 	</a><p>HP Omnibook X Flip 14 Next Gen AI Laptop<br> </p>
+<p class="price">Rs. 477,110</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('HP Omnibook X Flip 14 Next Gen AI Laptop')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-        <div><a href="#"><img src="notebook-xps-13-9350-t-oled-gy-gallery-1.avif " alt="Crucial P2 SSD.img" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+       <a href="#"><img src="notebook-xps-13-9350-t-oled-gy-gallery-1.avif " alt="Crucial P2 SSD.img" >
 	</a><p>Dell xps 13 laptop <br></p>
+<p class="price">Rs. 418,670</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('Dell xps 13 laptop ')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-        <div><a href="#"><img src="notebook-db16250nt-copilot-pc-mg.avif" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+       <a href="#"><img src="notebook-db16250nt-copilot-pc-mg.avif" >
 	</a><p> Dell 16 plus laptop<br> </p>
+<p class="price">Rs. 223,300</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('Dell 16 plus laptop')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-       <div><a href="#"><img src="lenovo_legion_pro_7_laptop_pakistan_1__2.webp" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+      <a href="#"><img src="lenovo_legion_pro_7_laptop_pakistan_1__2.webp" >
 	</a><p> Lenovo Legion Pro 7- Arrow Lake - Intel Core Ultra 9 <br></p>
+<p class="price">Rs. 1,475,000</p>
 	<div class="action-buttons">
 	<button onclick="addToCart(' Lenovo Legion Pro 7 ')">Add to Cart</button>
 	<button>Buy Now</button>
 	</div></div>
 
-       <div><a href="#"><img src="hp_spectre_x360_14_eu0097nr_laptop_price_pakistan_1_.webp" >
+<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
+       <a href="#"><img src="hp_spectre_x360_14_eu0097nr_laptop_price_pakistan_1_.webp" >
 	</a><p> HP Spectre x360 14  <br></p>
+<p class="price">Rs. 475,000</p>
 	<div class="action-buttons">
 	<button onclick="addToCart('HP Spectre x360 14 ')">Add to Cart</button>
 	<button>Buy Now</button>
@@ -300,6 +323,16 @@
  	alert(productName + " added to cart!");
  	console.log("Cart:", cart);
 	}
+	function showCardPrice(card) {
+	        const price = card.querySelector(".price");
+		price.style.display = "block";
+	}
+
+	function hideCardPrice(card) {
+		const price = card.querySelector(".price");
+		price.style.display = "none";
+	}
+
 </script>
 
 </body>
