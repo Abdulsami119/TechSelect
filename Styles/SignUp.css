@@ -1,120 +1,192 @@
 body {
-            background-color: #EFFFFB;
-            margin: 0;
-        }
+        background-color: white;
+        margin: 0px;
+background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
-    
-        .header {
-            display: flex;
-            background-color: #94B4C1A;
-            padding: 10px;
-        }
+    }
 
-        #logopic img {
-            width: 150px;
-            height: 150px;
-            border-radius: 15px;
-        }
+    .header {
+        display: flex;
+        background-color: white;
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+	background-image:url("../images/header_back.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+    }
 
-        #logo {
-            padding: 30px;
-            margin-left: 80px;
-            color: white;
-            font-size: 80px;
-        }
-
-
-        .nav{
-	display:flex;
-	background-color:black;
-	text-align:center;
-	}
-
-	.nav div{
-	background-color:#1E1E1E;
-	padding:20px;
-	margin-left:20px;
-	margin-right:20px;
-	font-size:20px;
-	font-family: "Lucida Console";
-	text-align:justified;
-	border-radius:10px;
-	}
-
-	#home{
-	margin-left:600px;
-	}
-	
-	
-	.nav div a{
-	display:block;
-	text-decoration:none;
-	color:#FFFFFF;
-	}
-	
-	.nav div:hover{
-	background-color:#333333;
-	cursor:pointer;
-	color:#FFFFFF;
-	}
-
-	.dropdown {
-	position: relative;
-	background-color:pink;
-	padding:20px;
-	margin-left:20px;
-	margin-right:20px;
-	font-size:20px;
-	font-family:"Lucida Console";
-	border-radius:10px;
-	}
-
-	.dropdown > a {
-	color:pink;
-	text-decoration:none;
-	display:block;
-	}
-
-	.dropdown-content {
-	display: none;
-	position: absolute;
-	top: 60px;
-	left: 0;
+    #logopic img {
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-left: 20px;
 	background-color: #1E1E1E;
-	min-width: 200px;
-	border-radius: 10px;   /* outer box only */
-	box-shadow: 0 5px 15px rgba(0,0,0,0.8);
-	overflow: hidden;     /* IMPORTANT: clips inner items */
-	z-index: 100;
+        border-radius: 10px;
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+    }
+
+    #logo {
+        padding: 15px;
+        margin-left: 80px;
+        text-align: left;
+        color: white;
+        font-size: 40px;
+        margin-top: 45px;
+	margin-bottom:55px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bold;
+	border-radius:16px;
+	border: 4px solid transparent; 
+    	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+    }
+
+    #top-right {
+        top: 10px;
+        right: 10px;
+    }
+
+    #top-right button {
+        width: 100px;
+        height: 70px;
+        border-radius: 15px;
+        margin-left: 1210px;
+        margin-top: 50px;
+        background-color: #1E1E1E;
+        color: #FFFFFF;
+        border: 4px solid transparent;
+        background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+    	}
+
+    	.nav {
+        display: flex;
+        background-color: black;
+        text-align: center;
+  	border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+ 	}
+
+    	.nav div {
+        background-color: #1E1E1E;
+        padding: 20px;
+	margin-top:3px;
+	margin-bottom:3px;
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 20px;
+        font-family: "Lucida Console";
+        text-align: justified;
+        border-radius: 10px;
+	background-color: #1E1E1E;
+        border-radius: 10px;
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+    	}
+
+   	#home {
+        margin-left: 650px;
+   	}
+
+   	 .nav div a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+    	}
+
+    	.nav div:hover {
+    	background:
+        linear-gradient(#333333, #333333) padding-box,
+        linear-gradient(90deg, cyan, purple, pink);
+    	cursor: pointer;
 	}
 
-	.dropdown-content a {
-	display: block;
-	padding: 12px;
-	color: #FFFFFF;
-	text-decoration: none;
-	font-size: 18px;
-	background-color: #1E1E1E;   
-	border-radius: 0;           
-	}
 
-	.dropdown-content a:hover {
-	background-color: #333333;
-	}
+    	.dropdown {
+        position: relative;
+        background-color: pink;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-family: "Lucida Console";
+        border-radius: 10px;
+    	}
 
-	.dropdown:hover .dropdown-content {
-	display:block;
-	}
+    	.dropdown > a {
+        color: pink;
+        text-decoration: none;
+        display: block;
+    	}
 
-	.dropdown:hover {
-	background-color:orange;
-	cursor:pointer;
-	}
+    	.dropdown-content {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1E1E1E;
+        min-width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+        overflow: hidden;
+        z-index: 100;
+    	}
+
+    	.dropdown-content a {
+        display: block;
+        padding: 12px;
+        color: #FFFFFF;
+	margin:6px;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: #1E1E1E;
+        border-radius: 10px;
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+    }
+
+    	.dropdown-content a:hover {
+        background:
+        linear-gradient(#333333, #333333) padding-box,
+        linear-gradient(90deg, cyan, purple, pink);
+    	cursor: pointer;
+    	}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    	}
+
+    	.dropdown:hover {
+        background-color: orange;
+        cursor: pointer;
+    	}
+
         .box {
-            background: #BBDCE5;
+            background:black;
+            color:white;
             border: 1px solid #dbdbdb;
             border-radius: 15px;
             padding: 20px;
+background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
         }
 	.margin_for_signup {
 	   margin-top:50px;
@@ -130,8 +202,13 @@ body {
             width: 95%;
             padding: 10px;
             margin: 5px 0;
-            border: 1px solid #dbdbdb;
+            border: 3px solid #dbdbdb;
             border-radius: 5px;
+background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
         }
 
 
