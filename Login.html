@@ -1,191 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TechSelect | Login</title>
-
-    <style>
-        body {
-            background-color: #EFFFFB;
-            margin: 0;
-        }
-
-        /* ===== HEADER ===== */
-        .header {
-            display: flex;
-            background-color: #94B4C1A;
-            padding: 10px;
-        }
-
-        #logopic img {
-            width: 150px;
-            height: 150px;
-            border-radius: 15px;
-        }
-
-        #logo {
-            padding: 30px;
-            margin-left: 80px;
-            color: white;
-            font-size: 80px;
-        }
-
-        /* ===== NAV ===== */
-        .nav{
-	display:flex;
-	background-color:black;
-	text-align:center;
-	}
-
-	.nav div{
-	background-color:#1E1E1E;
-	padding:20px;
-	margin-left:20px;
-	margin-right:20px;
-	font-size:20px;
-	font-family: "Lucida Console";
-	text-align:justified;
-	border-radius:10px;
-	}
-
-	#home{
-	margin-left:600px;
-	}
-	
-	
-	.nav div a{
-	display:block;
-	text-decoration:none;
-	color:#FFFFFF;
-	}
-	
-	.nav div:hover{
-	background-color:#333333;
-	cursor:pointer;
-	color:#FFFFFF;
-	}
-
-	.dropdown {
-	position: relative;
-	background-color:pink;
-	padding:20px;
-	margin-left:20px;
-	margin-right:20px;
-	font-size:20px;
-	font-family:"Lucida Console";
-	border-radius:10px;
-	}
-
-	.dropdown > a {
-	color:pink;
-	text-decoration:none;
-	display:block;
-	}
-
-	.dropdown-content {
-	display: none;
-	position: absolute;
-	top: 60px;
-	left: 0;
-	background-color: #1E1E1E;
-	min-width: 200px;
-	border-radius: 10px;   /* outer box only */
-	box-shadow: 0 5px 15px rgba(0,0,0,0.8);
-	overflow: hidden;     /* IMPORTANT: clips inner items */
-	z-index: 100;
-	}
-
-	.dropdown-content a {
-	display: block;
-	padding: 12px;
-	color: #FFFFFF;
-	text-decoration: none;
-	font-size: 18px;
-	background-color: #1E1E1E;   
-	border-radius: 0;           
-	}
-
-	.dropdown-content a:hover {
-	background-color: #333333;
-	}
-
-	.dropdown:hover .dropdown-content {
-	display:block;
-	}
-
-	.dropdown:hover {
-	background-color:orange;
-	cursor:pointer;
-	}
-
-        /* ===== FORM AREA ===== */
-        .box {
-            background: #BBDCE5;
-            border: 1px solid #dbdbdb;
-            border-radius: 15px;
-            padding: 20px;
-        }
-	.margin_for_signup {
-	   margin-top:50px;
-	   margin-bottom:50px;
-	   margin-left:500px;
-	   margin-right:500px;
-	}
-	.margin_for_forgot_password {
-		margin-left:500px;
-		margin-right:500px;
-	}
-        input {
-            width: 95%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #dbdbdb;
-            border-radius: 5px;
-        }
-
-        /* ERROR TEXT STYLE */
-        .error {
-            color: red;
-            font-size: 13px;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        button {
-            width: 98%;
-            padding: 12px;
-            background-color: #0095f6;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-            button:hover {
-                background-color: #0078cc;
-            }
-
-        .small-links {
-            text-align: center;
-            font-size: 14px;
-        }
-
-            .small-links a {
-                color: #0095f6;
-                text-decoration: none;
-            }
-    </style>
+    <title>Login</title>
+	<link rel="stylesheet" href="Styles/Login.css">
 </head>
 
 <body>
 
-<!-- ===== HEADER ===== -->
+
 <div class="header">
     <div id="logopic"><img src="logo.png"></div>
     <div id="logo">Tech Select</div>
 </div>
 
-<!-- ===== NAV BAR ===== -->
+
 <div class="nav">
     <div id="home"><a href="Home.html">Home</a></div>
 	<div class="dropdown">
@@ -201,7 +29,7 @@
 	<div><a href="AboutUs.html">About Us</a></div>
 </div>
 
-<!-- ===== LOGIN FORM ===== -->
+
     <div class="left">
 
         <div class="box margin_for_signup">
@@ -228,38 +56,7 @@
 
     </div>
 
-<!-- ===== JAVASCRIPT ===== -->
-<script>
-function validateLogin() {
-
-    let username = document.getElementById("loginUsername");
-    let password = document.getElementById("loginPassword");
-
-    // clear old errors
-    document.getElementById("userError").innerText = "";
-    document.getElementById("passError").innerText = "";
-
-    let isValid = true;
-
-    if (username.value.trim() === "") {
-        document.getElementById("userError").innerText =
-            "Username is required";
-        isValid = false;
-    }
-
-    if (password.value.trim() === "") {
-        document.getElementById("passError").innerText =
-            "Password is required";
-        isValid = false;
-    }
-
-    if (isValid) {
-        alert("Login successful ✔");
-    }
-
-    return false; // demo only
-}
-</script>
+<script src="Scripts/Login.js"></script>
 
 </body>
 </html>
