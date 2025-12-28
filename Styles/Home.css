@@ -3,7 +3,7 @@ body {
         margin: 0px;
     }
 
-    .header {
+    	.header {
         display: flex;
         background-color: white;
         padding: 10px;
@@ -12,9 +12,9 @@ body {
 	background-image:url("../images/header_back.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
-    }
+    	}
 
-    #logopic img {
+    	#logopic img {
         width: 150px;
         height: 150px;
         border-radius: 15px;
@@ -26,9 +26,9 @@ body {
 	background:
     	linear-gradient(black, black) padding-box,
     	linear-gradient(90deg, cyan, purple, pink)
-    }
+    	}
 
-    #logo {
+    	#logo {
         padding: 15px;
         margin-left: 80px;
         text-align: left;
@@ -43,14 +43,14 @@ body {
     	background:
     	linear-gradient(black, black) padding-box,
     	linear-gradient(90deg, cyan, purple, pink)
-    }
+    	}
 
-    #top-right {
+    	#top-right {
         top: 10px;
         right: 10px;
-    }
+    	}
 
-    #top-right button {
+    	#top-right button {
         width: 100px;
         height: 70px;
         border-radius: 15px;
@@ -155,7 +155,7 @@ body {
 	background:
     	linear-gradient(black, black) padding-box,
     	linear-gradient(90deg, cyan, purple, pink)
-    }
+    	}
 
     	.dropdown-content a:hover {
         background:
@@ -164,7 +164,7 @@ body {
     	cursor: pointer;
     	}
 
-    .dropdown:hover .dropdown-content {
+    	.dropdown:hover .dropdown-content {
         display: block;
     	}
 
@@ -191,7 +191,7 @@ body {
     	linear-gradient(90deg, cyan, purple, pink)
 	}
 
-    .products {
+    	.products {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: stretch;
@@ -202,9 +202,9 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	padding: 50px;
-    }
+    	}
 
-    .products > div:not(.heading){
+    	.products > div:not(.heading){
 	background-color:black;
         border-radius: 15px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.8);
@@ -219,25 +219,65 @@ body {
 	background:
     	linear-gradient(black, black) padding-box,
     	linear-gradient(90deg, cyan, purple, pink)
-     }
+     	}
 
-    .products div img {
+    	.products div img {
         width: 100%;
         height: auto;
         border-radius: 10px;
         object-fit: cover;
 
-    }
+    	}
 
-    .products div img:hover {
+    	.products div img:hover {
         background-color: #2A2A2A;
         transform: scale(1.05);
         cursor: pointer;
-    }
+    	}
 
-    .products div h2 {
+    	.products div h2 {
 	color:white;
         margin-top: 15px;
         font-family: "Lucida Console";
-    }
+    	}
 	
+	.footer {
+    	background-color: black;
+    	color: cyan;
+    	padding: 30px 20px;
+    	border-top: 4px solid transparent;
+    	background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(90deg, cyan, purple, pink) border-box;
+	}
+
+	#Footer-Head {
+    	text-align: center;
+    	margin-bottom: 30px;
+	}
+
+	.footer-content {
+    	display: flex;
+    	justify-content: space-between;
+    	flex-wrap: wrap;
+    	margin-bottom: 20px;
+	}
+
+	#Footer-Left,
+	#Footer-Right {
+    	width: 45%;
+	}
+
+	#Footer-Left {
+    	text-align: center;
+	}
+
+	#Footer-Right {
+    	text-align: center;
+	}
+
+	#Footer-Bottom {
+    	text-align: center;
+    	margin-top: 20px;
+    	font-size: 14px;
+	}

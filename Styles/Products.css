@@ -284,14 +284,43 @@ body {
 	display: none;
 	font-weight: bold;
 	}
-	.footer
-	{
-	display:block;
-	background-color:black;
-	color:white;
-	text-align:center;
-	border-top: 4px solid transparent;        
-	background:
-    	linear-gradient(black, black) padding-box,
-    	linear-gradient(90deg, cyan, purple, pink)
+	.footer {
+    	background-color: black;
+    	color: cyan;
+    	padding: 30px 20px;
+    	border-top: 4px solid transparent;
+    	background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(90deg, cyan, purple, pink) border-box;
+	}
+
+	#Footer-Head {
+    	text-align: center;
+    	margin-bottom: 30px;
+	}
+
+	.footer-content {
+    	display: flex;
+    	justify-content: space-between;
+    	flex-wrap: wrap;
+    	margin-bottom: 20px;
+	}
+
+	#Footer-Left,
+	#Footer-Right {
+    	width: 45%;
+	}
+
+	#Footer-Left {
+    	text-align: center;
+	}
+
+	#Footer-Right {
+    	text-align: center;
+	}
+
+	#Footer-Bottom {
+    	text-align: center;
+    	margin-top: 20px;
+    	font-size: 14px;
 	}
