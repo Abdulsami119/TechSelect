@@ -20,6 +20,12 @@ body {
         border-radius: 15px;
         margin-top: 30px;
         margin-left: 20px;
+	background-color: #1E1E1E;
+        border-radius: 10px;
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
     }
 
     #logo {
@@ -44,19 +50,24 @@ body {
         margin-top: 50px;
         background-color: #1E1E1E;
         color: #FFFFFF;
-        border: none;
-	border: 5px solid gold;
-    }
+        border: 4px solid transparent;
+        background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+    	}
 
-    .nav {
+    	.nav {
         display: flex;
         background-color: black;
         text-align: center;
-	border-top: 5px solid gold;
-	border-bottom: 5px solid gold;
-    }
+  	border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+ 	}
 
-    .nav div {
+    	.nav div {
         background-color: #1E1E1E;
         padding: 20px;
 	margin-top:3px;
@@ -67,26 +78,33 @@ body {
         font-family: "Lucida Console";
         text-align: justified;
         border-radius: 10px;
-	border: 3px solid gold;
-    }
+	background-color: #1E1E1E;
+        border-radius: 10px;
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
+    	}
 
-    #home {
+   	#home {
         margin-left: 650px;
-    }
+   	}
 
-    .nav div a {
+   	 .nav div a {
         display: block;
         text-decoration: none;
         color: #FFFFFF;
-    }
+    	}
 
-    .nav div:hover {
-        background-color: #333333;
-        cursor: pointer;
-        color: #FFFFFF;
-    }
+    	.nav div:hover {
+    	background:
+        linear-gradient(#333333, #333333) padding-box,
+        linear-gradient(90deg, cyan, purple, pink);
+    	cursor: pointer;
+	}
 
-    .dropdown {
+
+    	.dropdown {
         position: relative;
         background-color: pink;
         padding: 20px;
@@ -95,15 +113,15 @@ body {
         font-size: 20px;
         font-family: "Lucida Console";
         border-radius: 10px;
-    }
+    	}
 
-    .dropdown > a {
+    	.dropdown > a {
         color: pink;
         text-decoration: none;
         display: block;
-    }
+    	}
 
-    .dropdown-content {
+    	.dropdown-content {
         display: none;
         position: absolute;
         top: 60px;
@@ -114,21 +132,28 @@ body {
         box-shadow: 0 5px 15px rgba(0,0,0,0.8);
         overflow: hidden;
         z-index: 100;
-    }
+    	}
 
-    .dropdown-content a {
+    	.dropdown-content a {
         display: block;
         padding: 12px;
         color: #FFFFFF;
+	margin:6px;
         text-decoration: none;
         font-size: 18px;
         background-color: #1E1E1E;
         border-radius: 10px;
-	border: 3px solid gold;
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
     }
 
     	.dropdown-content a:hover {
-        background-color: #333333;
+        background:
+        linear-gradient(#333333, #333333) padding-box,
+        linear-gradient(90deg, cyan, purple, pink);
+    	cursor: pointer;
     	}
 
     .dropdown:hover .dropdown-content {
@@ -150,6 +175,12 @@ body {
     	margin: 0 auto 50px auto;
     	width: fit-content;
     	padding: 0 60px;
+	background-color: #1E1E1E;
+        border-radius: 10px;
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
 	}
 	
 	.products{
@@ -177,13 +208,19 @@ body {
 	text-align:center;
 	display:flex;
 	flex-direction:column;
+	background-color: #1E1E1E;
+        border-radius: 10px;
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
 	}
 	
 	.products div img{
 	width:250px;
 	height:150px;
 	margin-top:30px;
-	margin-left:125px;
+	margin-left:20px;
 	margin-bottom:0px;
 	}
 	
@@ -216,10 +253,17 @@ body {
 	background-color:#333333;
 	color:white;
 	font-family:"Lucida Console";
+	border: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, #00f2ff, #7a00ff, #ff5fa2)
 	}
 
 	.action-buttons button:hover{
-	background-color:#555555;
+	background:
+        linear-gradient(#333333, #333333) padding-box,
+        linear-gradient(90deg, cyan, purple, pink);
+    	cursor: pointer;
 	}
 	.product-card {
 	position:relative;
