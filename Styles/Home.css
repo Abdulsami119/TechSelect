@@ -1,0 +1,200 @@
+    body {
+        background-color: white;
+        margin: 0px;
+    }
+
+    .header {
+        display: flex;
+        background-color: white;
+        padding: 10px;
+        margin: 0px;
+        text-align: center;
+	background-image:url("../images/header_back.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+    }
+
+    #logopic img {
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    #logo {
+        padding: 30px;
+        margin-left: 80px;
+        text-align: left;
+        color: black;
+        font-size: 42px;
+        margin-top: 35px;
+    }
+
+    #top-right {
+        top: 10px;
+        right: 10px;
+    }
+
+    #top-right button {
+        width: 100px;
+        height: 70px;
+        border-radius: 15px;
+        margin-left: 1210px;
+        margin-top: 50px;
+        background-color: #1E1E1E;
+        color: #FFFFFF;
+        border: none;
+	border: 5px solid gold;
+    }
+
+    .nav {
+        display: flex;
+        background-color: black;
+        text-align: center;
+	border-top: 5px solid gold;
+	border-bottom: 5px solid gold;
+    }
+
+    .nav div {
+        background-color: #1E1E1E;
+        padding: 20px;
+	margin-top:3px;
+	margin-bottom:3px;
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 20px;
+        font-family: "Lucida Console";
+        text-align: justified;
+        border-radius: 10px;
+	border: 3px solid gold;
+    }
+
+    #home {
+        margin-left: 650px;
+    }
+
+    .nav div a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .nav div:hover {
+        background-color: #333333;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
+    .dropdown {
+        position: relative;
+        background-color: pink;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-family: "Lucida Console";
+        border-radius: 10px;
+    }
+
+    .dropdown > a {
+        color: pink;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1E1E1E;
+        min-width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+        overflow: hidden;
+	margin-top:10px;
+        z-index: 100;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: #1E1E1E;
+        border-radius: 10px;
+	border: 3px solid gold;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #333333;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover {
+        background-color: orange;
+        cursor: pointer;
+    }
+
+    .heading {
+    grid-column: 1 / -1;  
+    display: block;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 25px;
+    margin: 0 auto 50px auto;
+    width: fit-content;
+    padding: 0 60px;
+}
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+        background-color: white;
+        padding: 30px;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 50px;
+    }
+
+    .products > div:not(.heading){
+	background-color:black;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+        text-align: center;
+        padding: 0px;
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom:30px;
+        transition: 0.3s;
+     }
+
+    .products div img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+
+    }
+
+    .products div img:hover {
+        background-color: #2A2A2A;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .products div h2 {
+	color:white;
+        margin-top: 15px;
+        font-family: "Lucida Console";
+    }
+	

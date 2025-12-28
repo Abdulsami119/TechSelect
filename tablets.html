@@ -3,231 +3,12 @@
 <head>
 	<title>Tablets</title>
 	<meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/Products.css">
 </head>
-<style>
-
-	body{
-	background-color:#EFFFFB;
-	margin:0px;
-	}
-
-	.header{
-	display:flex;
-	background-color:#94B4C1;
-	padding:10px;
-	margin:0px;
-	text-align:center;
-	}
-	
-	#logopic img{
-	width:150px;
-	height:150px;
-	border-radius:15px;
-	margin-top:30px;
-	margin-left:20px;
-	}
-	
-	#logo{
-	padding:30px;
-	margin-left:80px;
-	text-align:left;
-	color:black;
-	font-size:42px;
-	margin-top:35px;
-	}
-
-	#top-right {
-	top: 10px;
-	right: 10px;
-	}
-
-	#top-right button{
-	width:100px;
-	height:70px;
-	border-radius: 15px;
-	margin-left: 1210px;
-	margin-top: 50px;
-	background-color:#1E1E1E;
-	color:#FFFFFF;
-	border:none;
-	}
-
-	.nav{
-	display:flex;
-	background-color:black;
-	text-align:center;
-	}
-
-	.nav div{
-	background-color:#1E1E1E;
-	padding:20px;
-	margin-left:20px;
-	margin-right:20px;
-	font-size:20px;
-	font-family: "Lucida Console";
-	text-align:justified;
-	border-radius:10px;
-	}
-
-	#home{
-	margin-left:600px;
-	}
-
-	.nav div a{
-	display:block;
-	text-decoration:none;
-	color:#FFFFFF;
-	}
-	
-	.nav div:hover{
-	background-color:#333333;
-	cursor:pointer;
-	color:#FFFFFF;
-	}
-
-	.dropdown {
-	position: relative;
-	background-color:pink;
-	padding:20px;
-	margin-left:20px;
-	margin-right:20px;
-	font-size:20px;
-	font-family:"Lucida Console";
-	border-radius:10px;
-	}
-
-	.dropdown > a {
-	color:pink;
-	text-decoration:none;
-	display:block;
-	}
-
-	.dropdown-content {
-	display: none;
-	position: absolute;
-	top: 60px;
-	left: 0;
-	background-color: #1E1E1E;
-	min-width: 200px;
-	border-radius: 10px;   /* outer box only */
-	box-shadow: 0 5px 15px rgba(0,0,0,0.8);
-	overflow: hidden;     /* IMPORTANT: clips inner items */
-	z-index: 100;
-	}
-
-	.dropdown-content a {
-	display: block;
-	padding: 12px;
-	color: #FFFFFF;
-	text-decoration: none;
-	font-size: 18px;
-	background-color: #1E1E1E;   
-	border-radius: 0;           
-	}
-
-	.dropdown-content a:hover {
-	background-color: #333333;
-	}
-
-	.dropdown:hover .dropdown-content {
-	display:block;
-	}
-
-	.dropdown:hover {
-	background-color:orange;
-	cursor:pointer;
-	}
-
-	.heading {
-	text-align:center;
-	background-color:#BBDCE5;
-	border-radius:25px;
-	margin-left:800px;
-	margin-right:800px;
-	margin-top:50px;
-	margin-bottom:50px;
-	}
-
-	.products{
-	display:grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	align-items:stretch;
-	gap:20px;
-	background-color:#BBDCE5;
-	padding:30px;
-        grid-template-columns: repeat(3, 1fr);
-	}
-
-	.products div{
-	background-color:#1E1E1E;
-	padding:20px;
-	margin:20px;
-	font-size:24px;
-	color:#FFFFFF;
-	border-radius:15px;
-	box-shadow:0 5px 15px rgba(0,0,0,0.8);
-	text-align:center;
-	display:flex;
-	flex-direction:column;
-	}
-	
-	.products div img{
-	width:250px;
-	height:150px;
-	margin-top:30px;
-	margin-bottom:0px;
-	}
-	
-	.products div a{
-	display:block;
-	text-decoration:none;
-	color:#FFFFFF;
-	}
-	
-	.products div:hover{
-	background-color:#2A2A2A;
-	color:#FFFFFF;
-	}
-	.action-buttons{
-	display:flex;
-	justify-content:center;
-	gap:10px;
-	margin-top:auto;
-	}
-
-	.action-buttons button{
-	padding:8px 14px;
-	font-size:14px;
-	font-weight:bold;
-	border:none;
-	border-radius:8px;
-	cursor:pointer;
-	background-color:#333333;
-	color:white;
-	font-family:"Lucida Console";
-	}
-
-	.action-buttons button:hover{
-	background-color:#555555;
-	}
-	.product-card {
-	position:relative;
-	}
-
-	.price {
-	color: #00ff99;
-	font-size: 22px;
-	margin: 10px 0;
-	display: none;
-	font-weight: bold;
-	}
-
-
-</style>
 <body>
 
 <div class="header">
-	<div id="logopic"><img src="logo.png" alt="Logo"></div>
+	<div id="logopic"><img src="images/logo.png" alt="Logo"></div>
 	<div id="logo">Tech Select</div>
 	<div id="top-right">
 	<a href="login.html"><button>Login</button></a></div>	
@@ -245,18 +26,16 @@
 	<a href="Laptops.html">Laptops</a>
 	</div>
 	</div>
-	<div><a href="Cart.html">Cart</a></div>
 	<div><a href="AboutUs.html">About Us</a></div>
 </div>
 
+<div class="products">
 <div class="heading">
 	<br><h1>Tablets</h1><br>
 </div>
-
-<div class="products">
         
 <div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
-	<a href="#"><img src="Samsung Galaxy Tab S10 Lite.webp" >
+	<a href="#"><img src="images/Samsung Galaxy Tab S10 Lite.webp" >
 	</a><p>Samsung Galaxy Tab S10 Lite<br> </p>
 <p class="price">Rs. 114,999</p>
 	<div class="action-buttons">
@@ -265,7 +44,7 @@
 	</div></div>
 
 <div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
-<a href="#"><img src="iPad Pro.jpg" >
+<a href="#"><img src="images/iPad Pro.jpg" >
 	</a><p>Iphone iPad Pro" <br> </p>
 <p class="price">Rs. 279,200</p>
 	<div class="action-buttons">
@@ -274,7 +53,7 @@
 	</div></div>
 
 <div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
-<a href="#"><img src="Xiaomi+Redmi+Pad+7+Pro+12GB+RAM+512GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26568.webp" >
+<a href="#"><img src="images/Xiaomi+Redmi+Pad+7+Pro+12GB+RAM+512GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26568.webp" >
 	</a><p> Xiaomi Redmi Pad 7 Pro  <br> </p>
 <p class="price">Rs. 162,999</p>
 	<div class="action-buttons">
@@ -283,7 +62,7 @@
 	</div></div>
 
 <div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
-<a href="#"><img src="Samsung+Galaxy+Tab+S11+Ultra_-_26784.webp" >
+<a href="#"><img src="images/Samsung+Galaxy+Tab+S11+Ultra_-_26784.webp" >
 	</a><p>Samsung Galaxy Tab S11 Ultra<br> </p>
 <p class="price">Rs. 304,999</p>
 	<div class="action-buttons">
@@ -292,7 +71,7 @@
 	</div></div>
 	
 <div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
-<a href="#"><img src="Apple+iPad+Air+13+M3+Chip+256GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26566.webp" >
+<a href="#"><img src="images/Apple+iPad+Air+13+M3+Chip+256GB+Storage+Wifi+Price+in+Pakistan,+Specifications,+Features_-_26566.webp" >
 	</a><p>Apple iPad Air 13 <br> </p>
 <p class="price">Rs. 274,999</p>
 	<div class="action-buttons">
@@ -302,7 +81,7 @@
 
 
 	<div class="product-card" onmouseover="showCardPrice(this)" onmouseout="hideCardPrice(this)">
-<a href="#"><img src="Surface+Pro+10+Core+Ultra+7+16GB+RAM+512GB+SSD+Windows+11+Price+in+Pakistan,+Specifications,+Features_-_25400.webp" >
+<a href="#"><img src="images/Surface+Pro+10+Core+Ultra+7+16GB+RAM+512GB+SSD+Windows+11+Price+in+Pakistan,+Specifications,+Features_-_25400.webp" >
 	</a><p>Surface Pro 10 Core Ultra 7 <br> </p>
 <p class="price">Rs. 614,999</p>
 	<div class="action-buttons">
@@ -311,25 +90,8 @@
 	</div></div>
 
 </div>
-<script>
-	let cart = [];
-	function addToCart(productName) 
-	{
- 	cart.push(productName);
- 	alert(productName + " added to cart!");
- 	console.log("Cart:", cart);
-	}
-	function showCardPrice(card) {
-		const price = card.querySelector(".price");
-		price.style.display = "block";
-	}
 
-	function hideCardPrice(card) {
-		const price = card.querySelector(".price");
-		price.style.display = "none";
-	}
-
-</script>
+<script src="Scripts/Products.js"> </script>
 
 </body>
 </html>
