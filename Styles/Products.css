@@ -1,5 +1,5 @@
 body {
-        background-color: white;
+        background-color: black;
         margin: 0px;
     }
 
@@ -283,4 +283,15 @@ body {
 	margin: 10px 0;
 	display: none;
 	font-weight: bold;
+	}
+	.footer
+	{
+	display:block;
+	background-color:black;
+	color:white;
+	text-align:center;
+	border-top: 4px solid transparent;        
+	background:
+    	linear-gradient(black, black) padding-box,
+    	linear-gradient(90deg, cyan, purple, pink)
 	}
