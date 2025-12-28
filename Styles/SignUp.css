@@ -71,6 +71,7 @@ background-image: url("../images/background.jpg");
 
     	.nav {
         display: flex;
+	padding:30px;
         background-color: black;
         text-align: center;
   	border-top: 4px solid transparent;
@@ -80,111 +81,15 @@ background-image: url("../images/background.jpg");
     	linear-gradient(90deg, cyan, purple, pink)
  	}
 
-    	.nav div {
-        background-color: #1E1E1E;
-        padding: 20px;
-	margin-top:3px;
-	margin-bottom:3px;
-        margin-left: 60px;
-        margin-right: 60px;
-        font-size: 20px;
-        font-family: "Lucida Console";
-        text-align: justified;
-        border-radius: 10px;
-	background-color: #1E1E1E;
-        border-radius: 10px;
-	border: 4px solid transparent;        
-	background:
-    	linear-gradient(black, black) padding-box,
-    	linear-gradient(90deg, cyan, purple, pink)
-    	}
-
-   	#home {
-        margin-left: 650px;
-   	}
-
-   	 .nav div a {
-        display: block;
-        text-decoration: none;
-        color: #FFFFFF;
-    	}
-
-    	.nav div:hover {
-    	background:
-        linear-gradient(#333333, #333333) padding-box,
-        linear-gradient(90deg, cyan, purple, pink);
-    	cursor: pointer;
-	}
-
-
-    	.dropdown {
-        position: relative;
-        background-color: pink;
-        padding: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 20px;
-        font-family: "Lucida Console";
-        border-radius: 10px;
-    	}
-
-    	.dropdown > a {
-        color: pink;
-        text-decoration: none;
-        display: block;
-    	}
-
-    	.dropdown-content {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #1E1E1E;
-        min-width: 200px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.8);
-        overflow: hidden;
-        z-index: 100;
-    	}
-
-    	.dropdown-content a {
-        display: block;
-        padding: 12px;
-        color: #FFFFFF;
-	margin:6px;
-        text-decoration: none;
-        font-size: 18px;
-        background-color: #1E1E1E;
-        border-radius: 10px;
-	border: 4px solid transparent;        
-	background:
-    	linear-gradient(black, black) padding-box,
-    	linear-gradient(90deg, cyan, purple, pink)
-    }
-
-    	.dropdown-content a:hover {
-        background:
-        linear-gradient(#333333, #333333) padding-box,
-        linear-gradient(90deg, cyan, purple, pink);
-    	cursor: pointer;
-    	}
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    	}
-
-    	.dropdown:hover {
-        background-color: orange;
-        cursor: pointer;
-    	}
-
+    	
         .box {
             background:black;
             color:white;
             border: 1px solid #dbdbdb;
             border-radius: 15px;
             padding: 20px;
-background:
+        border: 4px solid transparent;
+        background:
     	linear-gradient(black, black) padding-box,
     	linear-gradient(90deg, cyan, purple, pink)
         }
@@ -201,10 +106,11 @@ background:
         input {
             width: 95%;
             padding: 10px;
-            margin: 5px 0;
-            border: 3px solid #dbdbdb;
+            margin-right:5px;
+	margin-left:5px;
+		border:3px solid gold;
             border-radius: 5px;
-background-image: url("../images/background.jpg");
+	background-image: url("../images/background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
