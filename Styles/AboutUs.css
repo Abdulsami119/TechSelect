@@ -1,7 +1,7 @@
 body {
         background-color: white;
         margin: 0px;
-background-image: url("../images/background.jpg");
+background-image: url("../images/header_back.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -71,6 +71,7 @@ background-image: url("../images/background.jpg");
     	.nav {
         display: flex;
         background-color: black;
+	margin-bottom:20px;
         text-align: center;
   	border-top: 4px solid transparent;
         border-bottom: 4px solid transparent;
@@ -197,8 +198,10 @@ background-image: url("../images/background.jpg");
 
 
 	.box {
-background-color:black
-color:white;
+	background-image:url("../images/background.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:black;
             border: 1px solid #dbdbdb;
             border-radius: 15px;
             padding: 20px;
